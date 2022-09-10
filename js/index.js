@@ -5,9 +5,7 @@ const jump = () => {
     mario.classList.add('jump')
 
     setTimeout(() => {
-
         mario.classList.remove('jump')
-
     }, 500)
 }
 
@@ -24,16 +22,13 @@ const loop = setInterval(() => {
         mario.style.bottom = `${marioPosition}px`
 
         mario.src = './images/game-over.png'
-        mario.style.width = '75px'
-        mario.style.marginLeft = '60px'
+        mario.style.width = '55px'
+        mario.style.marginLeft = '65px'
 
         clearInterval(loop)
-    
+
     }
-    
-
 }, 10)
-
 
 document.addEventListener('keydown', jump)
 document.addEventListener('touchstart', jump)

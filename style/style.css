@@ -17,12 +17,12 @@
 .pipe {
     position: absolute;
     bottom: 0;
-    width: 80px;
-    animation: pipe-animation 1.5s infinite linear;
+    width: 60px;
+    animation: pipe-animation 2s infinite linear;
 }
 
 .mario {
-    width: 150px;
+    width: 125px;
     position: absolute;
     bottom: 0;
 }
@@ -31,16 +31,16 @@
     animation: jump 500ms ease-out;
 }
 
-.clouds{
+.clouds {
     position: absolute;
     width: 550px;
     animation: clouds-animation 10s infinite linear;
 
 }
 
-@keyframes pipe-animation{
+@keyframes pipe-animation {
     from {
-        right: -80px;
+        right: -60px;
     }
 
     to {
@@ -48,22 +48,24 @@
     }
 }
 
-@keyframes jump{
+@keyframes jump {
     0% {
         bottom: 0;
     }
 
     40% {
-        bottom: 180px;
-    }
-    50% {
-        bottom: 180px;
-    }
-    60% {
-        bottom: 180px;
+        bottom: 160px;
     }
 
-    100%{
+    50% {
+        bottom: 160px;
+    }
+
+    60% {
+        bottom: 160px;
+    }
+
+    100% {
 
         bottom: 0;
     }
@@ -72,8 +74,9 @@
 
 @keyframes clouds-animation {
     from {
-        right: 0;
+        right: -550px;
     }
+
     to {
         right: 100%;
     }
